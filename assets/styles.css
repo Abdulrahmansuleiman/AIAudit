@@ -399,10 +399,10 @@ button { font-family: inherit; }
   line-height: 1.7;
   position: relative;
 }
-.calendly-wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 48px; }
+.calendly-wrap { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 24px 48px; }
 .calendly-wrap iframe,
 .calendly-wrap .calendly-inline-widget {
-  width: 100%;
+  width: 100% !important;
   min-height: 700px;
   border: 0;
   border-radius: 16px;
