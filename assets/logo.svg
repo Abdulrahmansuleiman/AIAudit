@@ -1,18 +1,29 @@
-<svg width="280" height="60" viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon group (rocket, trail, circuit) -->
-  <g transform="translate(100, -5)">
-    <!-- Rocket -->
-    <path d="M18 0L15 8L15 30L12 35L22 35L19 30L19 8L18 0Z" fill="#FFFFFF"/>
-    <!-- Trail (curved line from rocket base) -->
-    <path d="M15 25 C12 30 0 33 -10 30 C-20 27 -25 30 -30 25" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
-    <!-- Circuit platform line -->
-    <line x1="15" y1="30" x2="30" y2="30" stroke="#FFFFFF" stroke-width="1.8"/>
-    <!-- Circuit nodes and connections -->
-    <circle cx="35" cy="27" r="2.5" fill="#FFFFFF"/>
-    <path d="M30 30L35 27" stroke="#FFFFFF" stroke-width="1"/>
-    <circle cx="35" cy="33" r="2.5" fill="#FFFFFF"/>
-    <path d="M30 30L35 33" stroke="#FFFFFF" stroke-width="1"/>
+<svg viewBox="0 0 360 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon group: rocket, trail, circuit -->
+  <g>
+    <!-- Wavy trail behind the rocket -->
+    <path d="M271 62 C258 72 246 64 232 70 C224 73 216 70 208 74" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <!-- Rocket body -->
+    <rect x="267" y="26" width="16" height="28" rx="2" fill="#FFFFFF"/>
+    <!-- Rocket nose -->
+    <path d="M275 8 L283 26 L267 26 Z" fill="#FFFFFF"/>
+    <!-- Rocket window -->
+    <circle cx="275" cy="34" r="3" fill="#0A0A0A"/>
+    <!-- Rocket fins -->
+    <path d="M267 42 L259 52 L267 52 Z" fill="#FFFFFF"/>
+    <path d="M283 42 L291 52 L283 52 Z" fill="#FFFFFF"/>
+    <!-- Rocket engine -->
+    <rect x="271" y="54" width="8" height="4" rx="1" fill="#FFFFFF"/>
+    <!-- Circuit line -->
+    <line x1="283" y1="50" x2="316" y2="50" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Circuit nodes -->
+    <circle cx="300" cy="50" r="2.5" fill="#FFFFFF"/>
+    <line x1="300" y1="50" x2="300" y2="58" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="300" cy="60" r="2.5" fill="#FFFFFF"/>
+    <circle cx="312" cy="50" r="2.5" fill="#FFFFFF"/>
+    <line x1="312" y1="50" x2="312" y2="58" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="312" cy="60" r="2.5" fill="#FFFFFF"/>
   </g>
-  <!-- Text "LAUNCHOPS" -->
-  <text x="0" y="55" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="40" fill="#FFFFFF" letter-spacing="0.5">LAUNCHOPS</text>
+  <!-- Wordmark -->
+  <text x="4" y="62" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" letter-spacing="1">LAUNCHOPS</text>
 </svg>
