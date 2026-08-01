@@ -646,10 +646,10 @@ button { font-family: inherit; }
   border-bottom: 1px solid rgba(96, 165, 250, .4);
 }
 .cta-card .email-link:hover { color: #93C5FD; }
-.cta-embed { max-width: 1080px; margin: 0 auto; padding: 8px 24px 16px; }
+.cta-embed { width: 100%; max-width: 1000px; margin: 0 auto; padding: 8px 24px 16px; }
 .cta-embed iframe,
 .cta-embed .calendly-inline-widget {
-  width: 100%;
+  width: 100% !important;
   min-height: 680px;
   border: 0;
   border-radius: 16px;
