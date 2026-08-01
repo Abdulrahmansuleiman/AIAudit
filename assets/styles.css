@@ -399,12 +399,14 @@ button { font-family: inherit; }
   line-height: 1.7;
   position: relative;
 }
-.calendly-wrap { max-width: 800px; margin: 0 auto; padding: 0 24px 48px; }
-.calendly-wrap iframe {
+.calendly-wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 48px; }
+.calendly-wrap iframe,
+.calendly-wrap .calendly-inline-widget {
   width: 100%;
   min-height: 700px;
   border: 0;
   border-radius: 16px;
+  overflow: hidden;
 }
 @media (max-width: 640px) {
   .book-header { padding: 14px 16px; }
@@ -412,7 +414,8 @@ button { font-family: inherit; }
   .book-hero { padding-top: 40px; padding-bottom: 24px; }
   .book-eyebrow { font-size: 8px; letter-spacing: .08em; }
   .calendly-wrap { padding: 0 12px 36px; }
-  .calendly-wrap iframe { min-height: 600px; }
+  .calendly-wrap iframe,
+  .calendly-wrap .calendly-inline-widget { min-height: 600px; }
 }
 
 /* =========================================================
@@ -643,12 +646,14 @@ button { font-family: inherit; }
   border-bottom: 1px solid rgba(96, 165, 250, .4);
 }
 .cta-card .email-link:hover { color: #93C5FD; }
-.cta-embed { max-width: 800px; margin: 0 auto; padding: 8px 24px 16px; }
-.cta-embed iframe {
+.cta-embed { max-width: 1080px; margin: 0 auto; padding: 8px 24px 16px; }
+.cta-embed iframe,
+.cta-embed .calendly-inline-widget {
   width: 100%;
   min-height: 680px;
   border: 0;
   border-radius: 16px;
+  overflow: hidden;
 }
 
 @media (max-width: 640px) {
@@ -668,6 +673,7 @@ button { font-family: inherit; }
   .section-label { margin-bottom: 18px; }
   .cta-section { padding: 16px 16px 0; }
   .cta-embed { padding: 0 12px; }
-  .cta-embed iframe { min-height: 600px; }
+  .cta-embed iframe,
+  .cta-embed .calendly-inline-widget { min-height: 600px; }
   .cta-card { padding: 32px 22px; }
 }
