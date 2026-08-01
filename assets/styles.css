@@ -682,7 +682,8 @@ button { font-family: inherit; }
    SCHEDULER — Cal.com style two panel booking
    ========================================================= */
 .scheduler-wrap {
-  max-width: 900px;
+  width: 100%;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 40px 20px 56px;
 }
@@ -756,7 +757,7 @@ button { font-family: inherit; }
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .month-label {
   font-size: 13px;
@@ -790,24 +791,31 @@ button { font-family: inherit; }
 .weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  margin-bottom: 6px;
+  column-gap: 12px;
+  justify-items: center;
+  margin-bottom: 16px;
 }
 .weekdays span {
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: .04em;
-  color: #94a3b8;
+  letter-spacing: .5px;
+  color: #9ca3af;
   padding: 4px 0;
+  line-height: 1;
 }
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
+  column-gap: 12px;
+  row-gap: 14px;
+  justify-items: center;
 }
 .cal-cell {
-  aspect-ratio: 1;
+  width: 100%;
+  max-width: 40px;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -818,10 +826,10 @@ button { font-family: inherit; }
 }
 .cal-cell.available {
   cursor: pointer;
-  transition: all .15s;
+  transition: background .15s;
 }
 .cal-cell.available:hover {
-  background: #e2e8f0;
+  background: #f1f5f9;
 }
 .cal-cell.selected {
   background: #000;
@@ -836,7 +844,7 @@ button { font-family: inherit; }
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-top: 16px;
+  margin-top: 24px;
   padding: 10px 12px;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
@@ -939,9 +947,30 @@ button { font-family: inherit; }
 }
 
 @media (min-width: 700px) {
+  .scheduler-right { padding: 28px 24px; }
+  .sched-body {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .calendar-col {
+    flex: 1 1 0;
+    min-width: 324px;
+    padding-right: 16px;
+  }
+  .time-slots-col {
+    width: 240px;
+    flex-shrink: 0;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+    border-left: 1px solid #e5e7eb;
+    padding-left: 16px;
+  }
+}
+@media (min-width: 1060px) {
   .scheduler { flex-direction: row; }
   .scheduler-left {
-    width: 320px;
+    width: 300px;
     flex-shrink: 0;
     border-bottom: 0;
     border-right: 1px solid #e5e7eb;
@@ -952,24 +981,6 @@ button { font-family: inherit; }
     padding: 32px 32px;
     min-width: 0;
   }
-  .sched-body {
-    flex-direction: row;
-    gap: 32px;
-  }
-  .calendar-col { flex: 1; }
-  .time-slots-col {
-    width: 280px;
-    flex-shrink: 0;
-    margin-top: 0;
-    padding-top: 0;
-    border-top: 0;
-    border-left: 1px solid #e5e7eb;
-    padding-left: 28px;
-  }
-}
-@media (min-width: 1024px) {
-  .scheduler-left { width: 340px; }
-  .scheduler-right { padding: 40px 44px; }
 }
 @media (max-width: 420px) {
   .scheduler-wrap { padding: 20px 12px 40px; }
