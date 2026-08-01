@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Book a Call | LaunchOps | Abdulrahman Suleiman</title>
-  <meta name="description" content="Schedule a discovery call. Pick a date and time and we will build your AI Reps system in 14 days."/>
+  <title>Speed to Lead | Abdulrahman Suleiman | AI</title>
+  <meta name="description" content="Get your speed to lead advantage. Book your AI Reps discovery call."/>
+  <meta property="og:title" content="Speed to Lead | Abdulrahman Suleiman | AI"/>
+  <meta property="og:description" content="Get your speed to lead advantage."/>
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"/>
   <link rel="icon" href="/assets/favicon.png" type="image/png"/>
   <link rel="apple-touch-icon" href="/assets/favicon.png"/>
@@ -16,79 +18,21 @@
       <a href="/" class="nav-logo"><img src="/assets/logo.svg" alt="LaunchOps"/></a>
     </header>
 
-    <div class="scheduler-wrap">
-      <div class="scheduler">
-        <!-- LEFT PANEL -->
-        <aside class="scheduler-left">
-          <div class="event-avatar">
-            <img src="/assets/favicon.png" alt="LaunchOps avatar"/>
-          </div>
-          <h1 class="event-title">LaunchOps Growth Call</h1>
+    <div class="book-hero">
+      <div class="glow-1"></div>
+      <p class="book-eyebrow fade-in"><span class="dot"></span>For Founders &amp; Marketing Teams Ready to Scale with AI</p>
+      <h1 class="fade-in-1">Save <span class="gradient-text">$5K to $10K Per Month</span> on New Hires and 20+ Hours Per Week with AI Reps</h1>
+      <p class="sub fade-in-2">We implement our AI Operating System in your business in 14 days.</p>
+    </div>
 
-          <div class="event-meta">
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>45 min</span>
-          </div>
-
-          <div class="event-date">
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <span id="selected-date">Select a date</span>
-          </div>
-
-          <p class="event-desc">A focused 45 minute call to see how AI Reps can cut your hiring costs, and map out a 14 day implementation for your business.</p>
-        </aside>
-
-        <!-- RIGHT PANEL -->
-        <section class="scheduler-right">
-          <div class="schedule-header">Select Date &amp; Time</div>
-
-          <div class="month-nav">
-            <button type="button" id="prev-month" class="nav-arrow" aria-label="Previous month">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-            <span id="month-label" class="month-label">Loading</span>
-            <button type="button" id="next-month" class="nav-arrow" aria-label="Next month">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-            </button>
-          </div>
-
-          <div class="sched-body">
-            <div class="calendar-col">
-              <div class="weekdays">
-                <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
-              </div>
-              <div id="calendar-grid" class="calendar-grid"></div>
-
-              <div class="timezone-row">
-                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                <span id="tz-label" class="tz-label">Detecting time zone…</span>
-                <svg class="tz-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-                <select id="tz-select" class="tz-select" aria-label="Change time zone"></select>
-              </div>
-            </div>
-
-            <div id="time-slots-col" class="time-slots-col">
-              <div class="slot-panel">
-                <div id="slot-date-label" class="slot-date-label">Select a date to see available times</div>
-                <div id="slot-list" class="slot-list"></div>
-                <div id="confirm-wrap" class="confirm-bar">
-                  <a href="https://calendly.com/launchops-automation/30min" target="_blank" rel="noopener" class="confirm-btn">Confirm booking
-                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                  </a>
-                  <p class="confirm-hint">You'll finish on Calendly to lock in your time.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+    <div class="calendly-wrap fade-in-3">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/launchops-automation/30min"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     </div>
 
     <footer class="footer">
       <p>© 2026 Abdulrahman Suleiman | AI. All rights reserved.</p>
     </footer>
   </div>
-
-  <script src="/assets/scheduler.js"></script>
 </body>
 </html>
