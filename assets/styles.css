@@ -44,7 +44,7 @@ button { font-family: inherit; }
   align-items: center;
   text-decoration: none;
 }
-.nav-logo img { height: 32px; width: auto; display: block; }
+.nav-logo img { height: 40px; width: auto; display: block; }
 .nav-links { display: flex; align-items: center; gap: 8px; }
 .nav-link {
   padding: 8px 16px;
@@ -337,7 +337,7 @@ button { font-family: inherit; }
   padding: 20px 40px;
   border-bottom: 1px solid rgba(255, 255, 255, .04);
 }
-.book-header .nav-logo img { height: 44px; }
+.book-header .nav-logo img { height: 55px; }
 .book-hero {
   text-align: center;
   padding: 48px 16px 40px;
@@ -410,7 +410,7 @@ button { font-family: inherit; }
 }
 @media (max-width: 640px) {
   .book-header { padding: 14px 16px; }
-  .book-header .nav-logo img { height: 34px; }
+  .book-header .nav-logo img { height: 42px; }
   .book-hero { padding-top: 40px; padding-bottom: 24px; }
   .book-eyebrow { font-size: 8px; letter-spacing: .08em; }
   .calendly-wrap { padding: 0 12px 36px; }
