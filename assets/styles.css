@@ -392,11 +392,12 @@ button { font-family: inherit; }
   position: relative;
 }
 .book-hero .sub {
-  max-width: 520px;
+  max-width: 720px;
   margin: 20px auto 0;
-  color: rgba(255, 255, 255, .4);
-  font-size: 15px;
-  line-height: 1.7;
+  color: rgba(255, 255, 255, .85);
+  font-size: clamp(17px, 2.2vw, 20px);
+  line-height: 1.6;
+  font-weight: 400;
   position: relative;
 }
 .calendly-wrap { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 24px 48px; }
