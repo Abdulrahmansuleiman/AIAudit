@@ -394,10 +394,10 @@ button { font-family: inherit; }
 .book-hero .sub {
   max-width: 720px;
   margin: 20px auto 0;
-  color: rgba(255, 255, 255, .85);
+  color: rgba(255, 255, 255, .55);
   font-size: clamp(17px, 2.2vw, 20px);
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 300;
   position: relative;
 }
 .calendly-wrap { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 24px 48px; }
